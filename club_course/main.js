@@ -10,14 +10,11 @@ $(document).ready(function(){
     
     for(var x = 0; x < topicCount; x++)
     {
-        if(topic[x]=="不上課")
-        {
-            $("#courseTable").append("<tr><td class='event'>" + (x + 1) + "</td><td class='time'>" + (new Date(startDate.getTime() + x*7*dayUnit)).toLocaleDateString().slice(5) + "</td><td style='color: grey;'>" + topic[x] + "</td></tr>");
-        }
-        else
-        {
-            $("#courseTable").append("<tr><td class='event'>" + (x + 1) + "</td><td class='time'>" + (new Date(startDate.getTime() + x*7*dayUnit)).toLocaleDateString().slice(5) + "</td><td style='font-weight: bold;'>" + topic[x] + "</td></tr>");
-        }
+       $("#courseTable").append("<tr>");
+       $("#courseTable").append("<td>"+(x+1)"</td>");
+       $("#courseTable").append("<td>" + (new Date((startDate.getTime() + x*7*dayUnit))).toLocaleDateString().slice(5)+"</td>");
+       $("#courseTable").append("<td>"+topic[x]+"</td>");
+       $("#courseTable").append("</tr>");
     }
     
     $("#submit_date").click(function(){
@@ -29,7 +26,7 @@ $(document).ready(function(){
         setMonthAndDay(month, day);
         for(var x = 0; x < topicCount; x++)
         { 
-            document.getElementById("courseTable").rows[x+1].cells[1].innerHTML = (new Date(startDate.getTime() + x*7*dayUnit)).toLocaleDateString().slice(5)
+            document.getElementById("courseTable").rows[x+1].cells[1].innerHTML = (new Date(startDate.getTime() + x*7*dayUnit)).toLocaleDateString().slice(5)+
             //window.alert(document.getElementById("courseTable").rows[x+1].cells[1].innerHTML);
         }
     });

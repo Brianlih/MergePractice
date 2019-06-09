@@ -1,11 +1,4 @@
-var topic = [
-    "Kinkaku-ji",
-    "Seattle",
-    "Shibuya",
-    "Kyoto",
-    "Saitama",
-    "Los Angeles"
-];
+var topic = [];
 
 var startDate = new Date();
 

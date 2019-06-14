@@ -29,7 +29,7 @@ $(document).ready(function(){
         setMonthAndDay(month, day);
         for(var x = 0; x < topicCount; x++)
         { 
-            document.getElementById("courseTable").rows[x+1].cells[1].innerHTML = (new Date(startDate.getTime() + x*7*dayUnit)).toLocaleDateString().slice(5)
+            document.getElementById("courseTable").rows[x+1].cells[1].innerHTML = (new Date(startDate.getTime() + x*7*dayUnit)).toLocaleDateString().slice(5)+
             //window.alert(document.getElementById("courseTable").rows[x+1].cells[1].innerHTML);
         }
     });

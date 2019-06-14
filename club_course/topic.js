@@ -1,11 +1,4 @@
-var topic = [
-    "課程介紹",
-    "不上課",
-    "不上課",
-    "亂數選擇,自動排課",
-    "不上課",
-    "JS"
-];
+var topic = ["no plans", "dcmkdl"];
 
 var startDate = new Date();
 

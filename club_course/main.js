@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#courseTable").append("<tr><th>場次</th><th>時間</th><th>主題</th></tr>");
+    $("#courseTable").append("<tr><th>Number</th><th>Time</th><th>Itinerary</th></tr>");
     
     var topicCount = topic.length;
     
@@ -10,13 +10,13 @@ $(document).ready(function(){
     
     for(var x = 0; x < topicCount; x++)
     {
-        if(topic[x]=="不上課")
+        if(topic[x]=="no plans")
         {
-            $("#courseTable").append("<tr><td class='event'>" + (x + 1) + "</td><td class='time'>" + (new Date(startDate.getTime() + x*7*dayUnit)).toLocaleDateString().slice(5) + "</td><td style='color: grey;'>" + topic[x] + "</td></tr>");
+            $("#courseTable").append("<tr><td class='event'>" + (x + 1) + "</td><td class='time'>" + (new Date(startDate.getTime() + x*3*dayUnit)).toLocaleDateString().slice(5) + "</td><td style='color: grey;'>" + topic[x] + "</td></tr>");
         }
         else
         {
-            $("#courseTable").append("<tr><td class='event'>" + (x + 1) + "</td><td class='time'>" + (new Date(startDate.getTime() + x*7*dayUnit)).toLocaleDateString().slice(5) + "</td><td style='font-weight: bold;'>" + topic[x] + "</td></tr>");
+            $("#courseTable").append("<tr><td class='event'>" + (x + 1) + "</td><td class='time'>" + (new Date(startDate.getTime() + x*3*dayUnit)).toLocaleDateString().slice(5) + "</td><td style='font-weight: bold;'>" + topic[x] + "</td></tr>");
         }
     }
     
@@ -38,7 +38,7 @@ $(document).ready(function(){
         var input_text = $("#input_event").val();
         topic.push(input_text);
         topicCount = topic.length;
-        if(input_text=="不上課")
+        if(input_text=="no plans")
         {
             $("#courseTable").append("<tr><td class='event'>" + (topicCount) + "</td><td class='time'>" + (new Date(startDate.getTime() + (topicCount-1)*7*dayUnit)).toLocaleDateString().slice(5) + "</td><td style='color: grey;'>" + topic[topicCount-1] + "</td></tr>");
         }

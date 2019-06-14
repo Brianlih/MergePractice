@@ -103,16 +103,16 @@ $(document).keydown(function(event){
     
     switch(mapArray[targetBlock]){
         case undefined: //邊界
-            $("#talkBox").text("邊界");
+            $("#talkBox").text("Border");
             break;
         case 1: //障礙
-            $("#talkBox").text("有山");
+            $("#talkBox").text("Mountain");
             break;
         case 2: //end
-            $("#talkBox").text("抵達終點!");
+            $("#talkBox").text("Congratulations! You did it!");
             break;
         case 3: //enemy
-            $("#talkBox").text("嗨~");
+            $("#talkBox").text("You should not pass!");
             break;
     }
 });

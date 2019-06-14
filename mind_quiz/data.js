@@ -1,90 +1,90 @@
 var questions = [
     {
-        "question":"你現在對自己的2018年非常樂觀？",
+        "question":"Did you like where you went to last year？",
         "answers":[
-            ["是的",2],
-            ["不是",3],
-            ["不知道",4]
+            [" Yes, I did",2],
+            [" No!",3],
+            [" Not sure",4]
         ]
     },
     {
-        "question":"你覺得自己是不是越來越不可靠了？",
+        "question":"Did you like Asia more or Americas？",
         "answers":[
-            ["是的",3],
-            ["不是",4],
-            ["一般",5]
+            [" Asia",3],
+            [" Americas",4],
+            [" Not sure",5]
         ]
     },
     {
-        "question":"想到新的一年來到，就非常開心？",
+        "question":"Where do you want to go this year？",
         "answers":[
-            ["是的",4],
-            ["不是",5],
-            ["還好",6]
+            ["Asia",4],
+            ["Americas",5],
+            ["Not sure",6]
         ]
     },
     {
-        "question":"如果給你五百萬要你離開很愛的戀人，你會？",
+        "question":"What would you do if I ask you to leave your girlfriend with 5 millions？",
         "answers":[
-            ["好的",5],
-            ["都可以",6],
-            ["不要",7]
+            ["Why not?",5],
+            ["Definitely not",6],
+            ["Not sure",7]
         ]
     },
     {
-        "question":"過去一年裡，你有沒有受到很大的打擊？",
+        "question":"How many times have you studied aborad？",
         "answers":[
-            ["有的",6],
-            ["沒有",7],
-            ["還在承受著呢",8]
+            ["less than ten",6],
+            ["more then ten",7],
+            ["I don't remember",8]
         ]
     },
     {
-        "question":"你喜歡下面哪一個形容天氣的詞？",
+        "question":"Which color is  your favorite？",
         "answers":[
-            ["風和日麗",7],
-            ["豔陽高照",8],
-            ["秋高氣爽","A"]
+            ["Red",7],
+            ["Blue",8],
+            ["I don't know","A"]
         ]
     },
     {
-        "question":"你覺得自己的愛情一直是比較不一般的？",
+        "question":"Do you feel you have different personality with others？",
         "answers":[
-            ["是的",8],
-            ["不是",9],
-            ["不知道",10]
+            ["Yes",8],
+            ["I don;t think so",9],
+            ["Not really",10]
         ]
     },
     {
-        "question":"你會想要跟情人去哪裡旅行？",
+        "question":"Where do you wnat to go with your boyfriend or girlfriend？",
         "answers":[
-            ["蔚藍海岸",9],
-            ["山林湖畔","A"],
-            ["歷史古鎮","B"]
+            ["Seattle",9],
+            ["Hawaii","A"],
+            ["Jioufen","B"]
         ]
     },
     {
-        "question":"除了愛情，你更希望2018年實現哪件事情？",
+        "question":"Do you have promblem to make friends？",
         "answers":[
-            ["買房子","C"],
-            ["工作升遷","D"],
-            ["變帥變美","A"]
+            ["Yes","C"],
+            ["No","D"],
+            ["I don't know","A"]
         ]
     },
     {
-        "question":"下面哪一種飲料中獎，你最想要？",
+        "question":"Which brand of stereo is your favorite？",
         "answers":[
-            ["優格再來一瓶","B"],
-            ["啤酒再來一瓶","C"],
-            ["紅茶再來一瓶","D"]
+            ["JBL","B"],
+            ["BOSS","C"],
+            ["Beats","D"]
         ]
     }
     
 ];
 
 var finalAnswers={
-        "A":["愛情有點酸","在2018年，你的愛情有一些酸哦，不過還好，不苦，而且有時候雖然酸，酸中也帶了絲甜。即使你會與喜歡的人沒有緣分走到一起，但是你們彼此能祝福對方。心中有些酸，是因為你看得開。現在對愛情真的看得淡了，不會強求，也不渴望什麼轟轟烈烈，甜甜蜜蜜，只希望過了這陣酸，會有甜頭來。"],
-        "B":["愛情超級甜","在2018年裡，你的愛情超級甜蜜哦，真的有如蜜糖一樣甜，不時撒一把狗糧，能讓旁邊的人都覺得發膩哦。當然啦，你這麼幸運，遇到甜蜜的愛情，也是因為你是一個溫暖的人啊，值得這麼好的愛情，也值得別人好好疼愛你。你也會加倍珍惜，好好回饋對方，這樣才是愛情的正確打開方式。"],
-        "C":["愛情有苦有甜","你在2018年的愛情，一定是有苦也有甜的，其實這才是正常的感情，或者說普通的感情。有的人一直甜蜜，他們是幸運兒。而你是普通人，感情中會有甜蜜的時候，也會有爭吵矛盾，會有淚水，會有痛苦。但是學會理智經營感情，在甜的時候好好享受，在苦的時候及時審視，愛情才能持久。"],
-        "D":["愛情平淡沒滋味","2018年裡，你的愛情沒有啥滋味，可能你根本就遇不到愛情，繼續又單身一整年，這樣也好，你可以忙於賺錢。也可能你的愛情就是有如一碗平平淡淡的白開水，沒有什麼滋味，但是沒有它又不行。或者是缺少了一些刺激，但是誰的愛情能一直轟轟烈烈呢？平淡如水，細水長流，未嘗不是一件好事。"]
+        "A":["Let me tell you something","If you never have your own options you would always be a losser, so quit this website now! Just to make some friends!"],
+        "B":["Americas","Trust me, Americas is your best choice. It's really proper for your persenality. No metter who you are, you must can make a lots of friends there, even lover."],
+        "C":["Asia","You should have a comman trip, so just go where is near."],
+        "D":["Europe","You should have more trip which is about history, just like Berlin Wall."]
 };

@@ -1,4 +1,4 @@
-var topic = ["no plans", "dcmkdl"];
+var topic = [];
 
 var startDate = new Date();
 

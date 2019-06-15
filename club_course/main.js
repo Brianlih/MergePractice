@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#courseTable").append("<tr><th>Number</th><th>Time</th><th>Itinerary</th></tr>");
+    $("#courseTable").append("<tr><th>Number</th><th>Time</th><th>Destination</th></tr>");
     
     var topicCount = topic.length;
     
@@ -12,11 +12,11 @@ $(document).ready(function(){
     {
         if(topic[x]=="no plans")
         {
-            $("#courseTable").append("<tr><td class='event'>" + (x + 1) + "</td><td class='time'>" + (new Date(startDate.getTime() + x*3*dayUnit)).toLocaleDateString().slice(5) + "</td><td style='color: grey;'>" + topic[x] + "</td></tr>");
+            $("#courseTable").append("<tr><td class='event'>" + (x + 1) + "</td><td class='time'>" + (new Date(startDate.getTime() + x*7*dayUnit)).toLocaleDateString().slice(5) + "</td><td style='color: grey;'>" + topic[x] + "</td></tr>");
         }
         else
         {
-            $("#courseTable").append("<tr><td class='event'>" + (x + 1) + "</td><td class='time'>" + (new Date(startDate.getTime() + x*3*dayUnit)).toLocaleDateString().slice(5) + "</td><td style='font-weight: bold;'>" + topic[x] + "</td></tr>");
+            $("#courseTable").append("<tr><td class='event'>" + (x + 1) + "</td><td class='time'>" + (new Date(startDate.getTime() + x*7*dayUnit)).toLocaleDateString().slice(5) + "</td><td style='font-weight: bold;'>" + topic[x] + "</td></tr>");
         }
     }
     
@@ -29,7 +29,7 @@ $(document).ready(function(){
         setMonthAndDay(month, day);
         for(var x = 0; x < topicCount; x++)
         { 
-            document.getElementById("courseTable").rows[x+1].cells[1].innerHTML = (new Date(startDate.getTime() + x*7*dayUnit)).toLocaleDateString().slice(5)+
+            document.getElementById("courseTable").rows[x+1].cells[1].innerHTML = (new Date(startDate.getTime() + x*7*dayUnit)).toLocaleDateString().slice(5)
             //window.alert(document.getElementById("courseTable").rows[x+1].cells[1].innerHTML);
         }
     });
